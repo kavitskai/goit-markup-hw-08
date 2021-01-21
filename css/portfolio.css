@@ -327,16 +327,7 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
-}
-
-.footer-contacts {
-  width: 231px;
-}
-
-.footer .container {
-  display: flex;
-  justify-self: start;
-  align-items: baseline;
+  text-align: center;
 }
 
 .logo-white {
@@ -348,7 +339,7 @@ textarea {
 }
 
 .main-contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .main-contacts-link {
@@ -363,14 +354,10 @@ textarea {
 }
 
 /* =====Футер соцсети======= */
-.footer-social {
-  margin-left: 70px;
-}
-
 .join {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -380,8 +367,11 @@ textarea {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
+  justify-content: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-link {
@@ -404,10 +394,41 @@ textarea {
   fill: currentColor;
 }
 
-.subscription-form {
-  display: block;
-  margin-left: 93px;
-  width: 570px;
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+  .footer .container {
+    display: flex;
+    justify-self: start;
+    align-items: baseline;
+  }
+  .footer-contacts {
+    width: 231px;
+  }
+  .main-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-social {
+    margin-left: 70px;
+  }
 }
 
 .subs-title {
@@ -427,7 +448,6 @@ textarea {
   align-items: center;
   margin: 0 auto;
   padding: 10px 0;
-  margin-left: 12px;
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
@@ -447,13 +467,10 @@ textarea {
   fill: currentColor;
 }
 
-.subscription {
-  display: flex;
-}
-
 .subs-input {
+  margin-bottom: 20px;
   padding: 15px 16px;
-  min-width: 358px;
+  min-width: 100%;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -472,5 +489,36 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .subscription-form {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subs-input {
+    min-width: 450px;
+  }
+  .subscription-form {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: block;
+    margin-left: 93px;
+    width: 570px;
+  }
+  .subscription {
+    display: flex;
+  }
+  .subs-input {
+    margin-bottom: 0;
+    margin-right: 12px;
+    min-width: 358px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
