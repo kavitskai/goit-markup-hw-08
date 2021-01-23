@@ -471,6 +471,9 @@ textarea {
     margin-left: var(--card-set-gap);
     flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
+  .item-head {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -484,6 +487,9 @@ textarea {
   }
   .item:not(:last-child) {
     margin-right: 30px;
+  }
+  .item-head {
+    text-align: left;
   }
 }
 
